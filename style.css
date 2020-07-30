@@ -1,0 +1,50 @@
+*{margin: 0px; padding: 0px; box-sizing: border-box;}
+
+.banner{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url(pic/0006.jpg);
+	background-size: cover;
+	background-position: bottom;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner #text{
+	position: relative;
+	font-size: 12em;
+	color: red;
+}
+.banner .clouds{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	pointer-events: none;
+}
+.banner .clouds img{
+	position: absolute;
+	bottom: 0;
+	max-width: 100%;
+	animation: cloud calc(3s * var(--i)) linear infinite;
+}
+
+@keyframes cloud{
+	0%{opacity: 0; transform: scale(1);}
+
+	25%,75%{ opacity: 1; }
+
+	100%{transform: scale(3); opacity: 0;}
+}
+
+section{position: relative; padding: 75px 100px;}
+
+section h2{ position: relative; font-size: 2.5em; margin-bottom: 20px;
+text-transform: uppercase; }
+
+
+.main{background-color: white; height: 200px; width: 100%; align-items: center;}
+
